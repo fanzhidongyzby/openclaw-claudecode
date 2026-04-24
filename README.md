@@ -2,6 +2,11 @@
 
 通过 tmux 操作 Claude Code 执行开发任务的技能。
 
+## 链接
+
+- **ClawHub**: https://clawhub.ai/fanzhidongyzby/openclaw-claudecode
+- **GitHub**: https://github.com/fanzhidongyzby/openclaw-claudecode
+
 ## 简介
 
 本技能用于在容器环境中通过 tmux 会话操控 Claude Code (cc) 执行长时间开发任务，包括：
@@ -47,6 +52,13 @@ npm install -g @anthropic-ai/claude-code
 
 # 创建普通用户（CC 禁止 root 运行）
 useradd -m -s /bin/bash claudecode
+```
+
+### 从 ClawHub 安装
+
+```bash
+# 安装技能
+claw install fanzhidongyzby/openclaw-claudecode
 ```
 
 ### 启动开发任务
