@@ -74,8 +74,6 @@ echo "<普通用户名>:<密码>" | chpasswd
 
 **推荐用户名**：`claudecode`、`developer`、`ccdev`
 
-**注意**：如果需要 sudo 权限，请使用 `visudo` 安全配置，切勿直接修改 `/etc/sudoers`。
-
 ### 0.5 环境检查汇总
 
 执行完整环境检查：

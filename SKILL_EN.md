@@ -74,8 +74,6 @@ echo "<username>:<password>" | chpasswd
 
 **Recommended usernames**: `claudecode`, `developer`, `ccdev`
 
-**Note**: If sudo access is needed, use `visudo` for safe configuration. Do not directly modify `/etc/sudoers`.
-
 ### 0.5 Environment Check Summary
 
 Run complete environment check:
