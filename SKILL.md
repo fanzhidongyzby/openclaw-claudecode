@@ -6,7 +6,7 @@ description: |
   不适用于：简单代码编辑（直接用 edit 工具）、非开发类 Claude 对话。
 metadata:
   author: FlorianFan
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # openclaw-claudecode Skill
@@ -70,12 +70,11 @@ useradd -m -s /bin/bash <普通用户名>
 
 # 设置密码（可选）
 echo "<普通用户名>:<密码>" | chpasswd
-
-# 或使用无密码 sudo（推荐开发环境）
-echo "<普通用户名> ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 ```
 
 **推荐用户名**：`claudecode`、`developer`、`ccdev`
+
+**注意**：如果需要 sudo 权限，请使用 `visudo` 安全配置，切勿直接修改 `/etc/sudoers`。
 
 ### 0.5 环境检查汇总
 

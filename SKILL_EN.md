@@ -6,7 +6,7 @@ description: |
   Not for: simple code edits (use edit tool directly), non-development Claude conversations.
 metadata:
   author: FlorianFan
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # openclaw-claudecode Skill
@@ -70,12 +70,11 @@ useradd -m -s /bin/bash <username>
 
 # Set password (optional)
 echo "<username>:<password>" | chpasswd
-
-# Or use passwordless sudo (recommended for dev environment)
-echo "<username> ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 ```
 
 **Recommended usernames**: `claudecode`, `developer`, `ccdev`
+
+**Note**: If sudo access is needed, use `visudo` for safe configuration. Do not directly modify `/etc/sudoers`.
 
 ### 0.5 Environment Check Summary
 
